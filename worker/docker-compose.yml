@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  gemma_inference:
+    build: .
+    container_name: slon_inference
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+      - "8001:8001"
+    volumes:
+      - "./model_cache:/app/.cache/huggingface"
+      - "./lora_adapters:/app/lora_adapters"
