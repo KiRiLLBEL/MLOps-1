@@ -1,0 +1,6 @@
+[submodule "SLON_tg_bot"]
+	path = SLON_tg_bot
+	url = https://github.com/Corsider/SLON_tg_bot
+[submodule "SLON-sender"]
+	path = SLON-sender
+	url = https://github.com/denfad/SLON-sender
